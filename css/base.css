@@ -1,0 +1,19 @@
+html, body {
+    margin: 0%;
+    background-color: white;
+    color: #222;
+    font-size: 18px;
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
+}
+
+/* レスポンシブ対応 (横幅が 550px 以下だったとき) */
+@media screen and (max-width: 550px) {
+    html, body{
+      font-size: 12px;
+    }
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0%;
+}

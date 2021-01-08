@@ -1,96 +1,25 @@
-@import url("base.css");
-
-header {
-    position: relative;/*fixedの場合もありますね*/
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-    /*以下色とかの装飾*/
-    padding: 10px;
-    color: white;
-    font-weight: bold;
-    background: #4293f5;
-}
-
-
-.slideshow {
-    padding: 10px;
-    height: 800px;
-}
-
-
-/* 活動 */
-
-.activities {
-    padding: 10px;
-}
-
-.schedule-container {
-    /* width: 80%; */
-    display: flex;
-    justify-content: center;
-}
-
-.schedule-container > div {
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    margin: 0.5rem;
-    padding: 0.5rem;
-    width: 24vw;
-    height: 10rem;
-    color: black;
-}
-
-.Tuesday {
-    background-color: #FFBAAC;
-    box-shadow: 5px 5px #FF795E;
-    transition: .3s;
-}
-
-.Wednesday {
-    background-color: #a3e7f7;
-    box-shadow: 5px 5px #5ADBF9;
-    transition: .3s;
-}
-
-.Thursday {
-    background-color: #a0faa9;
-    box-shadow: 5px 5px #55FB66;
-    transition: .3s;
-}
-
-
-.record {
-    padding: 10px;
-}
-
-
-.product {
-    padding: 10px;
-}
-
-
 /* フッター */
 
 footer {
     height: auto;
-    background-color: #222;
+    background-color: #333;
     color: white;
     padding: 8px;
-}
 
-footer p {
-    font-size: 1.4rem;
-    margin: 0.3rem;
-    text-align: center;
-}
-
-.icon-container {
-    display: flex;
-    justify-content: center;
-}
-
-.icon-container > a {
-    margin: 0px 5px 0px 5px;
+    .icon-container {
+        display: flex;
+        justify-content: center;
+    
+        .icon-link {
+            margin: 0px 5px 0px 5px;
+        }
+    }
+    
+    p {
+        font-size: 1.4rem;
+        margin: 0.3rem;
+        text-align: center;
+    }
 }
 
 

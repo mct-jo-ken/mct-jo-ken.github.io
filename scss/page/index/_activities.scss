@@ -1,0 +1,91 @@
+/* 活動 */
+
+.icons8-next-page { 
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNjQiIGhlaWdodD0iNjQiCnZpZXdCb3g9IjAgMCAxMjggMTI4IgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik02NCAxNEE1MCA1MCAwIDEgMCA2NCAxMTRBNTAgNTAgMCAxIDAgNjQgMTRaIj48L3BhdGg+PHBhdGggZmlsbD0iIzQ0NGI1NCIgZD0iTTY0LDExN2MtMjkuMiwwLTUzLTIzLjgtNTMtNTNzMjMuOC01Myw1My01M3M1MywyMy44LDUzLDUzUzkzLjIsMTE3LDY0LDExN3ogTTY0LDE3Yy0yNS45LDAtNDcsMjEuMS00Nyw0N3MyMS4xLDQ3LDQ3LDQ3czQ3LTIxLjEsNDctNDdTODkuOSwxNyw2NCwxN3oiPjwvcGF0aD48cGF0aCBmaWxsPSIjNDQ0YjU0IiBkPSJNNzYuNSw2N2MtMC42LDAtMS4zLTAuMi0xLjgtMC42bC0yMC0xNWMtMS4zLTEtMS42LTIuOS0wLjYtNC4yYzEtMS4zLDIuOS0xLjYsNC4yLTAuNmwyMCwxNWMxLjMsMSwxLjYsMi45LDAuNiw0LjJDNzguMyw2Ni42LDc3LjQsNjcsNzYuNSw2N3oiPjwvcGF0aD48cGF0aCBmaWxsPSIjNDQ0YjU0IiBkPSJNNTYuNSw4MmMtMC45LDAtMS44LTAuNC0yLjQtMS4yYy0xLTEuMy0wLjctMy4yLDAuNi00LjJsMjAtMTVjMS4zLTEsMy4yLTAuNyw0LjIsMC42YzEsMS4zLDAuNywzLjItMC42LDQuMmwtMjAsMTVDNTcuOCw4MS44LDU3LjEsODIsNTYuNSw4MnoiPjwvcGF0aD48L3N2Zz4=') 50% 50% no-repeat;
+    background-size: 100%;
+}
+
+$between: 55;
+
+#activities {
+    display: flex;
+    justify-content: space-between;
+
+    .description {
+        margin-left: 8%;
+        width: 28%;
+        // height: 600px;
+
+        p {
+            font-size: 1em;
+            margin-top: 4%;
+        }
+    }
+
+    .schedule {
+        display: block;
+        width: 56%;
+        height: 84vh;
+        min-height: 460px;
+        margin-top: 2%;
+        background-color: #f0f0f0;
+        overflow: hidden;
+
+        .schedule-container {
+            width: 240%;
+            height: 74%;
+            display: flex;
+            // font-size: 0;
+            // white-space: nowrap;
+            
+            .schedule-item {
+                flex: 1;
+                width: 60%;
+                height: 100%;
+                margin-right: #{$between}px;
+                margin-left: 0px;
+                background: rgba(102, 168, 255, 0.4);
+                
+                /* 要素内 */
+                font-size: 1em;
+                padding: 10px;
+            }
+
+            .last {
+                flex: 0.5;
+                margin-right: 0;
+                background-image: url("../images/clip-waiting.svg");
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: 50%;
+                // background-color: rgba(0, 0, 0, 0);
+                background-color: rgba(5, 55, 121, 0.2);
+            }
+        }
+        
+        .schedule-buttons {
+            display: inline;
+            width: 160px;
+            // height: 26%;
+            height: min-content;
+            padding-top: 10%;
+            margin: 0;
+            margin-left: calc(90% - 160px);
+            display: flex;
+            justify-content: space-between;
+            align-content: space-between;
+
+            #schdule-button-left {
+                @extend .icons8-next-page;
+                transform: rotate(180deg);
+            }
+            
+            #schdule-button-right {
+                @extend .icons8-next-page;
+            }
+        }
+    }
+}

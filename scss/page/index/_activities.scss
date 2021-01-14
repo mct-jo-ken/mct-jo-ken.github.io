@@ -13,6 +13,7 @@ $between: 55;
 #activities {
     display: flex;
     justify-content: space-between;
+    margin-top: 2%;
 
     .description {
         margin-left: 8%;
@@ -30,7 +31,7 @@ $between: 55;
         width: 56%;
         height: 84vh;
         min-height: 460px;
-        margin-top: 2%;
+        margin-top: 4%;
         background-color: #f0f0f0;
         overflow: hidden;
 

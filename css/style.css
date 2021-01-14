@@ -79,7 +79,6 @@ header {
   width: 100%;
   height: 70px;
   font-size: 1.4em;
-  background-color: rgba(255, 255, 255, 0.5);
 }
 
 header .site-icon {
@@ -106,11 +105,11 @@ header .link-box {
 header .link-box a {
   display: inline-block;
   position: relative;
-  margin-right: 5%;
-  margin-left: 5%;
+  text-align: center;
+  width: 130px;
   text-decoration: none;
   transition: 0.5s;
-  color: #222;
+  color: #fff;
 }
 
 header .link-box a::after {
@@ -165,6 +164,7 @@ header .link-box a:hover::after {
 #activities {
   display: flex;
   justify-content: space-between;
+  margin-top: 2%;
 }
 
 #activities .description {
@@ -182,7 +182,7 @@ header .link-box a:hover::after {
   width: 56%;
   height: 84vh;
   min-height: 460px;
-  margin-top: 2%;
+  margin-top: 4%;
   background-color: #f0f0f0;
   overflow: hidden;
 }
@@ -236,10 +236,8 @@ header .link-box a:hover::after {
 }
 
 #top .slideshow {
-  width: 84%;
-  height: 84%;
-  margin-left: 8%;
-  margin-right: 8%;
+  width: 100%;
+  height: 100%;
   background-image: url("../images/1317285_s.jpg");
   background-repeat: no-repeat;
   background-size: cover;

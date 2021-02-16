@@ -8,14 +8,13 @@
     background-size: 100%;
 }
 
-$between: 55;
 
 #activities {
     display: flex;
     justify-content: space-between;
-    margin-top: 2%;
 
     .description {
+        padding-top: 2%;
         margin-left: 8%;
         width: 28%;
         // height: 600px;
@@ -31,30 +30,46 @@ $between: 55;
         width: 56%;
         height: 84vh;
         min-height: 460px;
-        margin-top: 4%;
-        background-color: #f0f0f0;
+        margin-top: 5%;
         overflow: hidden;
+
+        background-color: #ffffff;
+        border-radius: 10px 0px 0px 10px;
+        box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.25);
 
         .schedule-container {
             width: 240%;
             height: 74%;
             display: flex;
+
             // font-size: 0;
             // white-space: nowrap;
-            
+
             .schedule-item {
                 flex: 1;
                 width: 60%;
                 height: 100%;
-                margin-right: #{$between}px;
+                margin-right: 55px;
                 margin-left: 0px;
                 background: rgba(102, 168, 255, 0.4);
                 
-                /* 要素内 */
                 font-size: 1em;
                 padding: 10px;
+
             }
 
+            .Tuesday {
+                background: linear-gradient(rgba(255, 193, 132, .8), rgba(255, 94, 94, .8));
+            }
+
+            .Wednesday {
+                background: linear-gradient(rgba(132, 255, 247, .8), rgba(94, 195, 255, .8));
+            }
+
+            .Thursday {
+                background: linear-gradient(rgba(197, 255, 133, .8), rgba(104, 253, 216, .8));
+            }
+            
             .last {
                 flex: 0.5;
                 margin-right: 0;
@@ -63,7 +78,7 @@ $between: 55;
                 background-repeat: no-repeat;
                 background-position: 50%;
                 // background-color: rgba(0, 0, 0, 0);
-                background-color: rgba(5, 55, 121, 0.2);
+                background-color: rgba(5, 55, 121, 0.1);
             }
         }
         

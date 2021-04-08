@@ -153,7 +153,7 @@ header .link-box a:hover::after {
 }
 
 /* 活動 */
-.icons8-next-page, #activities .schedule .schedule-buttons #schdule-button-left, #activities .schedule .schedule-buttons #schdule-button-right {
+.icons8-next-page, #activities .schedule .schedule-buttons #schedule-button-left, #activities .schedule .schedule-buttons #schedule-button-right {
   display: inline-block;
   width: 64px;
   height: 64px;
@@ -240,7 +240,7 @@ header .link-box a:hover::after {
   align-content: space-between;
 }
 
-#activities .schedule .schedule-buttons #schdule-button-left {
+#activities .schedule .schedule-buttons #schedule-button-left {
   transform: rotate(180deg);
 }
 
